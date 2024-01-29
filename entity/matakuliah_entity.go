@@ -1,7 +1,7 @@
 package entity
 
 type Matakuliah struct {
-	KodeMk string
-	NamaMk string
-	Sks    int
+	KodeMk string `gorm:"column:kode_mk"`
+	NamaMk string `gorm:"column:nama_mk"`
+	Sks    int    `gorm:"column:sks"`
 }

@@ -4,10 +4,12 @@ import (
 	"net/http"
 	"web-perkuliahan/config"
 	"web-perkuliahan/controllers"
+	"web-perkuliahan/entity"
 )
 
 func main() {
 	config.ConnectionDB()
+	config.DB.AutoMigrate(entity.Matakuliah{})
 
 	// matakuliah
 	http.HandleFunc("/matakuliah", controllers.MatakuliahIndex)
