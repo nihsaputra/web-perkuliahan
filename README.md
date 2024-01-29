@@ -1,4 +1,7 @@
-# Database #
+### Teknologi
+* MySql, Golang, Gorm, Bootstrap
+
+### Database 
 * configurasi default database in package -> config/database
   ```
   "root:password@tcp(127.0.0.1:3306)/perkuliahan_db"
